@@ -1,0 +1,243 @@
+*{
+    background: white;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
+    
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    
+}
+
+.text-area {
+    height: 400px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+::placeholder { color: #0A3871; }
+  .text-area:focus {
+      outline: none;
+    }
+
+.mensaje{
+    height: 500px;
+    background: #c9e9fc;
+    background-image: url("img/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 10px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 120px;
+    margin-top: 565px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion {
+    color: #495057;
+    font-size:18px;
+}
+
+.piePagina p {
+    background: #0A3871;
+    font-family: 'Inter';
+    color:#D8DFE8;
+    text-align: center;
+    font-size: medium;     
+    padding: 2rem;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin{
+    width: 33px;
+    height: 33px;
+    margin-right: 30px;  
+}
+
+.footer{
+    
+    background-color: rgba(23, 84, 89, .9);
+    padding-top: 0;
+}
+
+/* Código responsive*/
+
+@media screen and (max-width:375px) {
+
+    .logo {
+        display: block;
+    }  
+
+    main.contenedor {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.informacion {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.botones {
+        width: 100%; 
+        display: block;       
+        justify-content: center;
+        align-items: center;        
+    }
+
+    button.btn-encriptar {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    button.btn-desencriptar {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;       
+    }
+
+    section.contenedor {
+        width: 90%;
+        display: block;
+    }
+
+    textarea.mensaje {
+        display: block;
+        width: 100%;
+    }
+
+    div.copiar {
+        display: block;
+        width: 100%;
+    }
+
+    button.copiar {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Responsive para tabletas*/
+
+@media screen and (max-width:768px) {
+
+    .logo {
+        display: block;
+    }
+    main.contenedor {
+        width: 90%;
+        display: inline-block;
+        margin-left: 40px;               
+    } 
+
+    div.botones {
+        width: 100%;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2rem; 
+        margin-top: 0;       
+    }  
+
+    .mensaje {               
+        margin-top: 20px;
+        background-image: none;       
+        height: 200px;              
+    }  
+
+    textarea.mensaje {
+        display: flex;        
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 60px;
+    }    
+    
+    textarea.text-area {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 133px;        
+    }
+    
+    .informacion {
+        display: flex;
+        align-items: end;
+        justify-content: auto;
+    }
+
+    div.copiar {       
+        flex-direction: columns; 
+    }
+
+    button.copiar {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;        
+    }  
+}
